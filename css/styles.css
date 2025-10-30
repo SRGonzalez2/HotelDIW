@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --purple-text-color: #44406B;
+    --purple-text-dark: #050033;
+    --border-secondary-color: #DEDEE0;
+    --button-primary-bg: #1D1852;
+}
+
+.ac-header-logo {
+    width: 50px;
+    height: auto;
+}
+
+.ac-header-menu-text {
+    color: var(--purple-text-color)
+}
+
+.ac-navlink-border {
+    border-color: var(--purple-text-dark) !important;
+    color: var(--purple-text-dark) !important;
+    border-left-width: 8px !important;
+}
+
+.text-purple {
+    color: var(--purple-text-color);
+}
+
+.text-purple-dark {
+    color: var(--purple-text-dark)
+}
+
+.fs-10 {
+    font-size: 0.75rem;
+}
+
+.fs-7 {
+    font-size: 0.95rem;
+}
+
+/* Cuando el menú está cerrado (collapsed presente) */
+.ac-header-button.collapsed .open-icon {
+    display: flex !important;
+    /* mostrar hamburguesa */
+}
+
+.ac-header-button.collapsed .close-icon {
+    display: none !important;
+    /* ocultar X */
+}
+
+/* Cuando el menú está abierto (collapsed ausente) */
+.ac-header-button:not(.collapsed) .open-icon {
+    display: none !important;
+    /* ocultar hamburguesa */
+}
+
+.ac-header-button:not(.collapsed) .close-icon {
+    display: flex !important;
+    /* mostrar X */
+}
+
+.btn.btn-primary {
+    background-color: var(--button-primary-bg);
+}
+
+.py-25d {
+    padding-block: 0.75rem;
+}
