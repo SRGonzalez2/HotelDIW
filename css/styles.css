@@ -8,6 +8,11 @@
 
 }
 
+body,
+html {
+    overflow-x: hidden !important;
+}
+
 :root {
     --purple-text-color: #44406B;
     --purple-text-dark: #050033;
