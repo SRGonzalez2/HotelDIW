@@ -5,6 +5,7 @@
 *::before {
     box-sizing: border-box !important;
     font-family: "Montserrat", sans-serif;
+
 }
 
 :root {
@@ -12,6 +13,10 @@
     --purple-text-dark: #050033;
     --border-secondary-color: #DEDEE0;
     --button-primary-bg: #1D1852;
+    --button-primary-bg-green: #2b8687;
+    --button-primary-bg-white: #fcfcfc;
+    --text-blue: #1264A3;
+
 }
 
 .ac-header-logo {
@@ -45,6 +50,10 @@
     font-size: 0.95rem;
 }
 
+.fs-8 {
+    font-size: 0.90rem;
+}
+
 /* Cuando el menú está cerrado (collapsed presente) */
 .ac-header-button.collapsed .open-icon {
     display: flex !important;
@@ -71,6 +80,76 @@
     background-color: var(--button-primary-bg);
 }
 
+.btn.btn-primary.btn-green {
+    background-color: var(--button-primary-bg-green);
+}
+
+.btn.btn-primary.btn-white {
+    background-color: var(--button-primary-bg-white);
+    color: var(--purple-text-dark)
+}
+
 .py-25d {
     padding-block: 0.75rem;
+}
+
+.ac-hero-indicators button {
+    background-clip: border-box !important;
+    box-sizing: border-box !important;
+    height: 0.75rem !important;
+    width: 2.2rem !important;
+    /* ancho para los no activos */
+}
+
+.ac-hero-indicators button.active {
+    width: 3rem !important;
+    /* ancho para el activo */
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.ac-main {
+    background-color: #ebeef5;
+}
+
+.w-80-max {
+    max-width: 80%;
+}
+
+.ac-main input,
+.ac-main label,
+.ac-main .dropdown>button {
+    color: var(--purple-text-color);
+}
+
+.ac-main .dropdown>button {
+    padding-top: 1.7rem;
+    border: 1px solid #B1B0B8 !important;
+}
+
+.ac-main .dropdown>button.show {
+    border-color: #80bdff !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+#otrosCriterios {
+    color: var(--text-blue)
+}
+
+input,
+select {
+    border: 1px solid #B1B0B8 !important;
+}
+
+.ac-ofertas {
+    background-image: url("../assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 200px;
+
 }
