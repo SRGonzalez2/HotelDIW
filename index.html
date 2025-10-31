@@ -7,9 +7,10 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
@@ -212,11 +213,178 @@
 
         </div>
     </main>
-    <div class="ac-ofertas container-fluid w-100 d-flex flex-column justify-content-center px-4">
-        <h3 class="fs-1 fw-bold text-white ">Ahorra hasta un 25%</h3>
-        <p class="text-white fw-semibold fs-6">En estancias de un minimo de 2 noches</p>
-        <button class="btn btn-primary btn-white fw-semibold border-0 rounded-pill w-25">Ahorra ya</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="ac-ofertas d-flex flex-column justify-content-center px-4 col-12 col-md-4">
+                <h3 class="fs-1 fw-bold text-white ">Ahorra hasta un 25%</h3>
+                <p class="text-white fw-semibold fs-6">En estancias de un minimo de 2 noches</p>
+                <button class="btn btn-primary btn-white fw-semibold border-0 rounded-pill w-25">Ahorra ya</button>
+            </div>
+            <section
+                class="ac-about bg-white p-4 col-12 col-md-8 order-md-first d-flex flex-column justify-content-center">
+                <div>
+                    <h5 class="fs-6 fw-semibold">Acerca del hotel</h5>
+                    <p class="fs-7 mt-3 mb-2">El ibis München City West es un hotel moderno y cómodo en la capital
+                        bávara. Gracias a su céntrica ubicación, es el punto de partida ideal para explorar Múnich. Las
+                        habitaciones...</p>
+                    <span class="fs-7">Leer mas</span>
+                </div>
+                <div class="d-flex flex-column gap-0 mt-4">
+                    <span class="fs-7 fw-medium text-dark d-flex align-content-center"><svg class="me-1"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="#484368" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Westendstrasse 181, 80686 MUNICH Alemania</span>
+                    <span class="fs-8 text-decoration-underline"><svg class="me-1 opacity-0"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="#484368" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Ver en el mapa</span>
+                </div>
+            </section>
+        </div>
     </div>
+    <div class="container-fluid ac-sections p-4">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item border-0 border-bottom border-3 rounded-0 bg-transparent">
+                <h2 class="accordion-header rounded-0">
+                    <button class="accordion-button px-0 fs-4 fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                        Nuestras habitaciones
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show bg-transparent">
+                    <div class="accordion-body bg-transparent p-0 mt-2 mb-3">
+                        <div class="room-card card w-100 rounded-3 my-4">
+                            <img class="card-img-top"
+                                src="https://www.ahstatic.com/photos/6903_rodbc_00_p_2048x1536.jpg" class="card-img-top"
+                                alt="Imagen de la habitacion">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fs-4">Habitacion Standard con <strong>1 cama doble</strong></h5>
+                                <p class="fw-medium mb-3">2 pers. máx</p>
+                                <div class="w-100 mt-2">
+                                    <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-bed-double-icon lucide-bed-double">
+                                            <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
+                                            <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
+                                            <path d="M12 4v6" />
+                                            <path d="M2 18h20" />
+                                        </svg>
+                                        1 x Cama/s doble/s
+                                    </p>
+                                    <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-book-image-icon lucide-book-image">
+                                            <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17" />
+                                            <path
+                                                d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                                            <circle cx="10" cy="8" r="2" />
+                                        </svg>
+                                        Orientada a la ciudad
+                                    </p>
+                                </div>
+
+                                <a href="#"
+                                    class="mt-3 fs-7 fw-semibold py-25d btn btn-primary btn-primary outline w-100 rounded-pill bg-transparent">Ver
+                                    esta habitación</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-3 border-0 border-bottom border-3 rounded-0 bg-transparent">
+                <h2 class="accordion-header rounded-0">
+                    <button class="accordion-button px-0 fs-4 fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Nuestros servicios
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show bg-transparent">
+                    <div class="accordion-body bg-transparent p-0 mt-2 mb-3">
+                        <p class="fw-medium w-75">Registro a partir de 15:00 - Salida hasta 12:00</p>
+
+                        <div class="d-flex flex-column mt-4">
+                            <h5 class="fs-6 fw-semibold">En las instalaciones: </h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="fs-7 fw-medium d-flex align-content-center"><svg class="me-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="#252339" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-circle-parking-icon lucide-circle-parking">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M9 17V7h4a3 3 0 0 1 0 6H9" />
+                                    </svg>Aparcamiento</span>
+                                <span class="fs-7 fw-medium d-flex align-content-center"><svg class="me-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="#252339" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-coffee-icon lucide-coffee">
+                                        <path d="M10 2v2" />
+                                        <path d="M14 2v2" />
+                                        <path
+                                            d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" />
+                                        <path d="M6 2v2" />
+                                    </svg>Desayuno</span>
+                                <span class="fs-7 fw-medium d-flex align-content-center"><svg class="me-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="#252339" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-wifi-icon lucide-wifi">
+                                        <path d="M12 20h.01" />
+                                        <path d="M2 8.82a15 15 0 0 1 20 0" />
+                                        <path d="M5 12.859a10 10 0 0 1 14 0" />
+                                        <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+                                    </svg></svg>Wifi</span>
+                                <span class="fs-7 fw-medium d-flex align-content-center"><svg class="me-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="#252339" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-paw-print-icon lucide-paw-print">
+                                        <circle cx="11" cy="4" r="2" />
+                                        <circle cx="18" cy="8" r="2" />
+                                        <circle cx="20" cy="16" r="2" />
+                                        <path
+                                            d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
+                                    </svg>Se aceptan mascotas</span>
+                                <span class="fs-7 fw-medium d-flex align-content-center"><svg class="me-1"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="#252339" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-snowflake-icon lucide-snowflake">
+                                        <path d="m10 20-1.25-2.5L6 18" />
+                                        <path d="M10 4 8.75 6.5 6 6" />
+                                        <path d="m14 20 1.25-2.5L18 18" />
+                                        <path d="m14 4 1.25 2.5L18 6" />
+                                        <path d="m17 21-3-6h-4" />
+                                        <path d="m17 3-3 6 1.5 3" />
+                                        <path d="M2 12h6.5L10 9" />
+                                        <path d="m20 10-1.5 2 1.5 2" />
+                                        <path d="M22 12h-6.5L14 15" />
+                                        <path d="m4 10 1.5 2L4 14" />
+                                        <path d="m7 21 3-6-1.5-3" />
+                                        <path d="m7 3 3 6h4" />
+                                    </svg>Aire acondicionado</span>
+                            </div>
+                            <span class="fs-7 mt-3 mb-3 text-blue fw-medium text-decoration-underline">Ver todos los
+                                servicios</span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

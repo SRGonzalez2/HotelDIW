@@ -16,11 +16,14 @@ html {
 :root {
     --purple-text-color: #44406B;
     --purple-text-dark: #050033;
+    --purple-text-dark2: #252339;
     --border-secondary-color: #DEDEE0;
     --button-primary-bg: #1D1852;
     --button-primary-bg-green: #2b8687;
     --button-primary-bg-white: #fcfcfc;
     --text-blue: #1264A3;
+    --bg-light-blue: #ebeef5;
+    --border-gray-color: #DFDEDE;
 
 }
 
@@ -47,8 +50,16 @@ html {
     color: var(--purple-text-dark)
 }
 
+.text-blue {
+    color: var(--text-blue);
+}
+
 .fs-10 {
     font-size: 0.75rem;
+}
+
+.fs-6 {
+    font-size: 1rem;
 }
 
 .fs-7 {
@@ -85,6 +96,12 @@ html {
     background-color: var(--button-primary-bg);
 }
 
+.btn-primary.outline {
+    background-color: transparent !important;
+    border: 1px solid var(--button-primary-bg);
+    color: var(--button-primary-bg)
+}
+
 .btn.btn-primary.btn-green {
     background-color: var(--button-primary-bg-green);
 }
@@ -117,7 +134,7 @@ html {
 }
 
 .ac-main {
-    background-color: #ebeef5;
+    background-color: var(--bg-light-blue);
 }
 
 .w-80-max {
@@ -157,4 +174,55 @@ select {
 
     min-height: 200px;
 
+}
+
+.ac-ofertas button {
+    min-width: 120px;
+}
+
+.ac-about h5{
+    color: var(--purple-text-dark2);
+}
+
+.ac-about span{
+    color: var(--text-blue);
+}
+
+.ac-sections {
+    background-color: var(--bg-light-blue) !important;
+}
+
+.ac-sections .accordion {
+    border-width: 0px !important;
+}
+
+.ac-sections .accordion .accordion-header button {
+    background-color: var(--bg-light-blue) !important;
+    color: #052c66 !important;
+}
+
+
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.8rem; /* Aumenta el tamaño */
+  height: 1.8rem;
+  margin-left: auto;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+  color: #052c66 !important;
+  transition: transform 0.3s ease;
+}
+
+.ac-sections .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.room-card {
+    max-width: 400px;
+}
+
+.room-card img {
+    max-height: 250px;
 }
