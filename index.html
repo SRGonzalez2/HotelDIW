@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
 </head>
 
 <body>
+    <!--Header-->
     <nav class="ac-header navbar p-0">
         <div class="container-fluid p-0">
             <div class="p-3 d-flex justify-content-between align-items-center w-100 border-3 border-bottom">
@@ -68,6 +69,7 @@
                 </div>
             </div>
     </nav>
+    <!--Carousel principal-->
     <section id="carouselPrincipal" class="carousel slide carousel-fade mh-lg-10" data-bs-ride="carousel"
         data-bs-interval="3000">
 
@@ -100,6 +102,7 @@
         </button>
 
     </section>
+    <!--Seccion formulario-->
     <main class="container-fluid ac-main py-3 ">
         <div class="row justify-content-center g-2 gx-5">
             <div
@@ -210,6 +213,7 @@
 
         </div>
     </main>
+    <!--Seccion ofertas y quienes somos-->
     <div class="container-fluid">
         <div class="row">
             <div class="ac-ofertas d-flex flex-column justify-content-center px-4 col-12 col-md-4">
@@ -247,8 +251,10 @@
             </section>
         </div>
     </div>
+    <!--Seccion desplegables-->
     <div class="container-fluid ac-sections p-4">
-        <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionLanding">
+            <!--Item 1-->
             <div class="accordion-item border-0 border-bottom border-3 rounded-0 bg-transparent">
                 <h2 class="accordion-header rounded-0">
                     <button class="accordion-button px-0 fs-4 fw-bold" type="button" data-bs-toggle="collapse"
@@ -258,7 +264,7 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse show bg-transparent">
                     <div class="accordion-body bg-transparent p-0 mt-2 mb-3">
-                        <swiper-container  slides-per-view="auto" space-between="20" grab-cursor="true">
+                        <swiper-container init="false">
                             <swiper-slide>
                                 <div class="room-card card w-100 rounded-3 my-4">
                                     <img class="card-img-top"
@@ -307,7 +313,8 @@
                                         src="https://www.ahstatic.com/photos/6903_rotwc_00_p_2048x1536.jpg"
                                         class="card-img-top" alt="Imagen de la habitacion">
                                     <div class="card-body p-4">
-                                        <h5 class="card-title fs-4">Habitacion Standard con <strong>2 camas individuales</strong></h5>
+                                        <h5 class="card-title fs-4">Habitacion Standard con <strong>2 camas
+                                                individuales</strong></h5>
                                         <p class="fw-medium mb-3">2 pers. máx</p>
                                         <div class="w-100 mt-2">
                                             <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
@@ -343,10 +350,25 @@
                                 </div>
                             </swiper-slide>
                         </swiper-container>
-                        
+                        <div class="slider-controls w-100 d-flex justify-content-between align-sitems-center">
+                            <button class="prev-button p-1"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                                    height="36" viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-left-icon lucide-chevron-left">
+                                    <path d="m15 18-6-6 6-6" />
+                                </svg></button>
+                            <div class="custom-pagination d-flex justify-content-center align-items-center gap-2"></div>
+                            <button class="next-button  p-1"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                                    height="36" viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg></button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--Item 2-->
             <div class="accordion-item mt-3 border-0 border-bottom border-3 rounded-0 bg-transparent">
                 <h2 class="accordion-header rounded-0">
                     <button class="accordion-button px-0 fs-4 fw-bold" type="button" data-bs-toggle="collapse"
@@ -354,7 +376,7 @@
                         Nuestros servicios
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show bg-transparent">
+                <div id="collapseOne" class="accordion-collapse collapse bg-transparent">
                     <div class="accordion-body bg-transparent p-0 mt-2 mb-3">
                         <p class="fw-medium w-75">Registro a partir de 15:00 - Salida hasta 12:00</p>
 
@@ -429,5 +451,6 @@
 
 
 </body>
+<script src="./script.js"></script>
 
 </html>

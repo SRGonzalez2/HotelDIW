@@ -180,11 +180,11 @@ select {
     min-width: 120px;
 }
 
-.ac-about h5{
+.ac-about h5 {
     color: var(--purple-text-dark2);
 }
 
-.ac-about span{
+.ac-about span {
     color: var(--text-blue);
 }
 
@@ -204,15 +204,16 @@ select {
 
 
 .accordion-button::after {
-  flex-shrink: 0;
-  width: 1.8rem; /* Aumenta el tamaño */
-  height: 1.8rem;
-  margin-left: auto;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: 1.8rem;
-  color: #052c66 !important;
-  transition: transform 0.3s ease;
+    flex-shrink: 0;
+    width: 1.8rem;
+    /* Aumenta el tamaño */
+    height: 1.8rem;
+    margin-left: auto;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+    color: #052c66 !important;
+    transition: transform 0.3s ease;
 }
 
 .ac-sections .accordion-button:focus {
@@ -225,4 +226,37 @@ select {
 
 .room-card img {
     max-height: 250px;
+}
+
+.slider-controls button {
+    border: 2px solid #1D1852 !important;
+    border-radius: 50%;
+    box-shadow: none !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.slider-controls button:active {
+    transform: scale(0.85);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.custom-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #D1D5DB;
+    border-radius: 50%;
+    opacity: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background: #1D1852;
+    width: 24px;
+    border-radius: 4px;
+}
+
+.custom-pagination .swiper-pagination-bullet:hover {
+    background: #9CA3AF;
 }
