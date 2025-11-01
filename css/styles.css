@@ -172,7 +172,7 @@ select {
     background-repeat: no-repeat;
     background-size: cover;
 
-    min-height: 200px;
+    min-height: 220px;
 
 }
 
@@ -199,21 +199,6 @@ select {
 .ac-sections .accordion .accordion-header button {
     background-color: var(--bg-light-blue) !important;
     color: #052c66 !important;
-}
-
-
-
-.accordion-button::after {
-    flex-shrink: 0;
-    width: 1.8rem;
-    /* Aumenta el tamaño */
-    height: 1.8rem;
-    margin-left: auto;
-    content: "";
-    background-repeat: no-repeat;
-    background-size: 1.8rem;
-    color: #052c66 !important;
-    transition: transform 0.3s ease;
 }
 
 .ac-sections .accordion-button:focus {
@@ -259,4 +244,38 @@ select {
 
 .custom-pagination .swiper-pagination-bullet:hover {
     background: #9CA3AF;
+}
+
+footer {
+    background-color: var(--purple-text-dark);
+}
+
+footer .separator {
+    height: 2px;
+}
+
+#accordionFooter .accordion-button {
+    box-shadow: none !important;
+}
+
+.flex-05 {
+    flex: 0.5 !important;
+}
+
+
+#accordionFooter button,
+#accordionFooter button::after {
+    color: #ffffff !important;
+}
+
+#accordionFooter .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>") !important;
+}
+
+#accordionFooter .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>") !important;
+}
+
+#accordionFooter .accordion-item {
+    border-color: #161140 !important;
 }
