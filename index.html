@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ibis Munich - All Accor</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -44,12 +44,14 @@
 
                 </button>
 
-                <img class="ac-header-logo" src="./assets/logo.svg" alt="Logo de all accor">
+                <img onclick="window.location.href = '/index.html'"" class=" ac-header-logo" src="./assets/logo.svg"
+                    alt="Logo de all accor">
             </div>
             <div class="collapse d-lg-none container-fluid p-4" id="mobileMenu">
                 <ul class="navbar-nav bm-2 d-flex flex-column gap-4">
                     <li class="nav-item mt-3"><a
-                            class="ac-navlink-border nav-link border-4 p-0 px-3 border-start fs-4 fw-medium" href="#">El
+                            class="ac-navlink-border nav-link border-4 p-0 px-3 border-start fs-4 fw-medium"
+                            href="./index.html">El
                             Hotel</a></li>
                     <li class="nav-item"><a
                             class="ac-navlink-border nav-link border-4 p-0 px-3 border-start fs-4 fw-medium"
@@ -63,7 +65,8 @@
                     </li>
                 </ul>
                 <div class="container fluid d-flex flex-column justify-content-center align-items-center gap-2">
-                    <button class="btn btn-primary border-0 w-100 text-center rounded-pill mt-4 py-25d">Reservar
+                    <button onclick="window.location.href = '/reserva.html'"
+                        class="btn btn-primary border-0 w-100 text-center rounded-pill mt-4 py-25d">Reservar
                         ya</button>
                     <span class="fs-7 text-purple-dark">¿Necesitas ayuda?</span>
                 </div>
@@ -204,7 +207,8 @@
 
                     <!-- Botón -->
                     <div class="col-12 col-lg-2 mt-3 mt-lg-0">
-                        <button class="btn btn-primary btn-green w-100 border-0 rounded-pill fw-medium py-2">
+                        <button onclick="window.location.href = '/reserva.html'"
+                            class="btn btn-primary btn-green w-100 border-0 rounded-pill fw-medium py-8d">
                             Ver disponibilidad
                         </button>
                     </div>
@@ -616,7 +620,7 @@
             </div>
         </div>
     </div>
-    <!--Footer-->
+    <!--Footer Responsive-->
     <footer class="container-fluid p-4">
         <div class="d-flex align-items-center justify-content-center py-2 gap-4">
             <div class="flex-05 col-4 bg-white separator"></div>
@@ -628,11 +632,11 @@
             </svg>
             <div class="flex-05 col-4 bg-white separator"></div>
         </div>
-        <div class="accordion" id="accordionFooter">
+        <div class="accordion mb-4" id="accordionFooter">
             <!--Item 1-->
             <div class="accordion-item mt-3 border-0 border-bottom border-2 rounded-0 bg-transparent">
                 <h2 class="accordion-header rounded-0">
-                    <button class="accordion-button px-0 fs-4 fw-bold bg-transparent" type="button"
+                    <button class="accordion-button px-0 fs-5 fw-bold bg-transparent" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseReserva" aria-expanded="true"
                         aria-controls="collapseReserva">
                         El Hotel
@@ -649,7 +653,7 @@
             <!--Item 2-->
             <div class="accordion-item mt-3 border-0 border-bottom border-2 rounded-0 bg-transparent">
                 <h2 class="accordion-header rounded-0">
-                    <button class="accordion-button px-0 fs-4 fw-bold bg-transparent" type="button"
+                    <button class="accordion-button px-0 fs-5 fw-bold bg-transparent" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseContactos" aria-expanded="true"
                         aria-controls="collapseContacto">
                         Contacto
@@ -687,7 +691,7 @@
             <!--Item 3-->
             <div class="accordion-item mt-3 border-0 border-bottom border-3 rounded-0 bg-transparent">
                 <h2 class="accordion-header rounded-0">
-                    <button class="accordion-button px-0 fs-4 fw-bold bg-transparent" type="button"
+                    <button class="accordion-button px-0 fs-5 fw-bold bg-transparent" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseAyuda" aria-expanded="true"
                         aria-controls="collapseAyuda">
                         ¿Necesitas ayuda?
@@ -704,7 +708,7 @@
             <!--Item 4-->
             <div class="accordion-item mt-3 border-0 border-bottom border-3 rounded-0 bg-transparent">
                 <h2 class="accordion-header rounded-0">
-                    <button class="accordion-button px-0 fs-4 fw-bold bg-transparent" type="button"
+                    <button class="accordion-button px-0 fs-5 fw-bold bg-transparent" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseTerminos" aria-expanded="true"
                         aria-controls="collapseTerminos">
                         Terminos Legales
