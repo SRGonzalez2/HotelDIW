@@ -273,8 +273,8 @@
                 <div class="card-body p-4">
                     <h5 class="card-title fs-4">Habitacion Standard con <strong>1 cama
                             doble</strong></h5>
-                    <p class="fw-medium mb-3">2 pers. máx</p>
-                    <div class="w-100 mt-2">
+                    <p class="fw-medium fs-7 mb-1 ">2 pers. máx</p>
+                    <div class="w-100 my-2">
                         <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
                             <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2" stroke-linecap="round"
@@ -299,31 +299,114 @@
                         </p>
                     </div>
 
-                    <div class="d-flex align-items-center room-badges gap-2 flex-wrap my-4">
+                    <div class="d-flex align-items-center room-badges gap-2 flex-wrap my-3">
                         <span class="badge rounded-1 p-2 fs-9">16 m2</span>
                         <span class="badge rounded-1 p-2 fs-9">Ducha italiana</span>
                         <span class="badge rounded-1 p-2 fs-9">Planta alta</span>
                     </div>
 
-                    <div class="d-flex align-items-center justify-content-between w-100 prices flex-wrap">
-                        <div class="d-flex flex-column gap-2 h-100">
-                            <span class="badge members fs-7 fw-semibold px-3 py-2 rounded-1">Tarifa premium</span>
-                            <span class="price fs-2 fw-bold">131,25€</span>
+                    <div class="bg-gray rounded-2 d-flex flex-column p-3 tarifa-selected">
+                        <div class="upper d-flex flex-column flex-wrap gap-2">
+                            <div class=" d-flex align-items-center">
+                                <input type="radio" checked name="card2" id="">
+                                <span class="m-0 fw-semibold fs-8 ms-2">TARIFA PREPAGADA</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-ban-icon lucide-ban">
+                                    <path d="M4.929 4.929 19.07 19.071" />
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg>
+                                <span class="m-0 fw-medium fs-8 ms-2">No reembolsable</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-credit-card-icon lucide-credit-card">
+                                    <rect width="20" height="14" x="2" y="5" rx="2" />
+                                    <line x1="2" x2="22" y1="10" y2="10" />
+                                </svg>
+                                <span class="m-0 fw-medium fs-8 ms-2">Pago en línea</span>
+                            </div>
                         </div>
 
-                        <div class="d-flex flex-column gap-2 h-100">
-                            <span class="badge public fs-7 fw-semibold px-3 py-2 rounded-1">Tarifa publica</span>
-                            <span class="price fs-2 fw-medium text-end">145,80€</span>
+                        <div class="lower d-flex flex-column justify-content-center w-100 prices flex-wrap gap-2 mt-3">
+                            <div class="d-flex flex-column h-100">
+                                <span
+                                    class="badge members w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
+                                    premium</span>
+                                <span class="price fs-4 fw-bold"><span style="color: black"
+                                        class="fw-bold fs-6">Desde</span> 131,25€</span>
+                            </div>
+
+                            <div class="d-flex flex-column w-50 h-100">
+                                <span
+                                    class="badge public w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
+                                    publica</span>
+                                <span class="price fs-4 fw-medium"><span style="color: black" class="fw-bold fs-6">Desde
+                                    </span>145,80€</span>
+                            </div>
                         </div>
                     </div>
 
-                    <button class="btn btn-primary border-0 w-100 text-center rounded-pill mt-4 py-8d">Quiero
-                        esta
-                        habitacion <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                            <path d="m9 18 6-6-6-6" />
-                        </svg></button>
+                    <div class="bg-gray rounded-2 d-flex flex-column p-3 mt-3">
+                        <div class="upper d-flex flex-column flex-wrap gap-2">
+                            <div class=" d-flex align-items-center">
+                                <input type="radio" name="card2" id="">
+                                <span class="m-0 fw-semibold fs-8 ms-2">TARIFA PREPAGADA + DESAYUNO INCLUIDO</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-ban-icon lucide-ban">
+                                    <path d="M4.929 4.929 19.07 19.071" />
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg>
+                                <span class="m-0 fw-medium fs-8 ms-2">No reembolsable</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-credit-card-icon lucide-credit-card">
+                                    <rect width="20" height="14" x="2" y="5" rx="2" />
+                                    <line x1="2" x2="22" y1="10" y2="10" />
+                                </svg>
+                                <span class="m-0 fw-medium fs-8 ms-2">Pago en línea</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-coffee-icon lucide-coffee">
+                                    <path d="M10 2v2" />
+                                    <path d="M14 2v2" />
+                                    <path
+                                        d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" />
+                                    <path d="M6 2v2" />
+                                </svg>
+                                <span class="m-0 fw-medium fs-8 ms-2">Desayuno incluido</span>
+                            </div>
+                        </div>
+
+                        <div class="lower d-flex flex-column justify-content-center w-100 prices flex-wrap gap-2 mt-3">
+                            <div class="d-flex flex-column h-100">
+                                <span
+                                    class="badge members w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
+                                    premium</span>
+                                <span class="price fs-4 fw-bold"><span style="color: black"
+                                        class="fw-bold fs-6">Desde</span> 140,25€</span>
+                            </div>
+
+                            <div class="d-flex flex-column w-50 h-100">
+                                <span
+                                    class="badge public w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
+                                    publica</span>
+                                <span class="price fs-4 fw-medium"><span style="color: black" class="fw-bold fs-6">Desde
+                                    </span>152,80€</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -374,10 +457,10 @@
                 </section>
                 <!--Body de la card-->
                 <div class="card-body p-4">
-                    <h5 class="card-title fs-4">Habitacion Standard con <strong>2 camas
-                            individuales</strong></h5>
-                    <p class="fw-medium mb-3">2 pers. máx</p>
-                    <div class="w-100 mt-2">
+                    <h5 class="card-title fs-4">Habitacion Standard con <strong>1 cama
+                            doble</strong></h5>
+                    <p class="fw-medium fs-7 mb-1 ">2 pers. máx</p>
+                    <div class="w-100 my-2">
                         <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
                             <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2" stroke-linecap="round"
@@ -387,7 +470,7 @@
                                 <path d="M12 4v6" />
                                 <path d="M2 18h20" />
                             </svg>
-                            2 x Camas individuales
+                            1 x Cama/s doble/s
                         </p>
                         <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
                             <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -402,23 +485,12 @@
                         </p>
                     </div>
 
-                    <div class="d-flex align-items-center room-badges gap-2 flex-wrap my-4">
+                    <div class="d-flex align-items-center room-badges gap-2 flex-wrap my-3">
                         <span class="badge rounded-1 p-2 fs-9">16 m2</span>
                         <span class="badge rounded-1 p-2 fs-9">Ducha italiana</span>
                         <span class="badge rounded-1 p-2 fs-9">Planta alta</span>
                     </div>
 
-                    <div class="d-flex align-items-center justify-content-between w-100 prices flex-wrap">
-                        <div class="d-flex flex-column gap-2 h-100">
-                            <span class="badge members fs-7 fw-semibold px-3 py-2 rounded-1">Tarifa premium</span>
-                            <span class="price fs-2 fw-bold">153,30€</span>
-                        </div>
-
-                        <div class="d-flex flex-column gap-2 h-100">
-                            <span class="badge public fs-7 fw-semibold px-3 py-2 rounded-1">Tarifa publica</span>
-                            <span class="price fs-2 fw-medium text-end">164,59€</span>
-                        </div>
-                    </div>
 
                     <button class="btn btn-primary border-0 w-100 text-center rounded-pill mt-4 py-8d">Quiero
                         esta
@@ -434,10 +506,10 @@
 
 
 
-    <div class="position-sticky bottom-0 w-100 bg-white p-4 py-4" style="z-index: 1020;" id="stickyFooter"> 
+    <div class="position-sticky bottom-0 w-100 bg-white p-4 py-4" style="z-index: 1020;" id="stickyFooter">
         <div class="d-flex justify-content-between align-items-center">
             <p class="m-0 fw-bold">TOTAL <span class="fw-light fs-6">(impuestos incluidos)</span></p>
-            <span class="fs-5 fw-semibold" style="color: #2b8687">145,80€</span>
+            <span class="fs-5 fw-semibold" style="color: #2b8687">131,25€</span>
         </div>
         <button class="w-100 btn btn-primary btn-green rounded-pill py-2 mt-3 box-">Continuar</button>
     </div>

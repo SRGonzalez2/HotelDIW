@@ -8,10 +8,7 @@
 
 }
 
-body,
-html {
-   
-}
+
 
 :root {
     --purple-text-color: #44406B;
@@ -26,7 +23,14 @@ html {
     --border-gray-color: #DFDEDE;
 
 }
+body,
+html {
+    background-color: var(--bg-light-blue) !important;
+}
 
+header, nav {
+    background-color: white !important;
+}
 .ac-header-logo {
     width: 50px;
     height: auto;
@@ -212,6 +216,10 @@ select {
     border-width: 0px !important;
 }
 
+.bg-gray {
+    background-color: #f5f5f5 !important;
+}
+
 .ac-sections .accordion .accordion-header button {
     background-color: var(--bg-light-blue) !important;
     color: #052c66 !important;
@@ -223,6 +231,7 @@ select {
 
 .room-card {
     max-width: 400px;
+    max-height: max-content !important;
 }
 
 .room-card img {
@@ -326,5 +335,10 @@ footer .separator {
 }
 
 #stickyFooter {
-    box-shadow: 0 -2px 6px rgba(0,0,0,.1) !important;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, .1) !important;
+}
+
+.tarifa-selected {
+    background-color: #edf7f7 !important;
+    border: 2px solid #078585;
 }
