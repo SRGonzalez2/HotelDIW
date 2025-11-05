@@ -8,7 +8,8 @@
 
 }
 
-
+body,
+html {}
 
 :root {
     --purple-text-color: #44406B;
