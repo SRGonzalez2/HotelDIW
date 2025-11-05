@@ -77,7 +77,7 @@
     <!--Contenido principal-->
     <div class="container mt-4">
         <div class="row">
-            <div class="col-12 px-3 py-3 bg-white mt-4 overflow-hidden">
+            <div class="col-12 col-lg-5 order-lg-2 px-3 py-3 bg-white mt-4 info">
                 <div class="d-flex justify-content-between align-items-center">
                     <h5 class="m-0">Tu estancia</h5>
                     <a href="" class="text-nowrap">Ver detalles</a>
@@ -95,10 +95,20 @@
                     <span class="fs-7">18 de noviembre de 2025</span>
                 </div>
                 <span class="fs-8 fw-medium mt-lg-2">2 noches / 1 adulto</span>
+
+                <div class="d-lg-flex d-none mt-4 justify-content-between align-items-center">
+                    <p class="m-0 fw-bold">TOTAL <span class="fw-light fs-6">(impuestos incluidos)</span></p>
+                    <span class="fs-5 fw-semibold" style="color: #2b8687">131,25€</span>
+                </div>
+
+                <button type="submit" form="formularioCheckout"
+                    class="w-100 d-none d-lg-block btn btn-primary btn-green rounded-pill py-2 mt-3 box-">Continuar con
+                    el pago</button>
+
             </div>
 
-            <div class="col-12 mt-4 overflow-hidden p-0">
-                <form id="formularioCheckout" >
+            <div class="col-12 col-lg-7 order-lg-1 mt-4  mb-lg-5 overflow-hidden p-0">
+                <form id="formularioCheckout">
                     <div class="px-3 py-3 bg-white">
                         <h4 class="m-0 mb-3 fs-5 fw-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="30"
                                 height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
@@ -114,20 +124,24 @@
                         </h4>
                         <div class="mb-3">
                             <label class="fw-semibold fs-6" for="nombre" class="form-label">Nombre *</label>
-                            <input required placeholder="Saul" type="text" name="nom" class="form-control mt-1" id="nombre">
+                            <input required placeholder="Saul" type="text" name="nom" class="form-control mt-1"
+                                id="nombre">
                         </div>
                         <div class="mb-3">
                             <label class="fw-semibold fs-6" for="apellidos" class="form-label">Apellidos *</label>
-                            <input required placeholder="Romero Gonzalez" name="apellidos" type="text" class="form-control mt-1" id="apellidos">
+                            <input required placeholder="Romero Gonzalez" name="apellidos" type="text"
+                                class="form-control mt-1" id="apellidos">
                         </div>
 
                         <div class="mb-3">
                             <label class="fw-semibold fs-6" for="email" class="form-label">Correo electrónico *</label>
-                            <input required placeholder="sromero@example.com" name="email" type="email" class="form-control mt-1" id="email">
+                            <input required placeholder="sromero@example.com" name="email" type="email"
+                                class="form-control mt-1" id="email">
                         </div>
                         <div class="mb-3">
                             <label class="fw-semibold fs-6" for="phone" class="form-label">Numero de teléfono</label>
-                            <input required placeholder="+34 666 666 666" name="phone" type="phone" class="form-control mt-1" id="phone">
+                            <input required placeholder="+34 666 666 666" name="phone" type="phone"
+                                class="form-control mt-1" id="phone">
                         </div>
                     </div>
 
@@ -144,39 +158,42 @@
                         <div class="mb-3">
                             <label class="fw-semibold fs-6" for="tarjeta" class="form-label">Titular de la tarjeta
                                 *</label>
-                            <input required placeholder="SAUL ROMERO GONZALEZ" name="tarjeta" type="text" class="form-control mt-1"
-                                id="tarjeta">
+                            <input required placeholder="SAUL ROMERO GONZALEZ" name="tarjeta" type="text"
+                                class="form-control mt-1" id="tarjeta">
                         </div>
                         <div class="mb-3">
                             <label class="fw-semibold fs-6" for="numerotarjeta" class="form-label">Numero de la tarjeta
                                 *</label>
-                            <input required placeholder="4111 1111 1111 1111" name="tarjeta" type="text" class="form-control mt-1"
-                                id="numerotarjeta">
+                            <input required placeholder="4111 1111 1111 1111" name="tarjeta" type="text"
+                                class="form-control mt-1" id="numerotarjeta">
                         </div>
                         <div class="mb-3">
                             <label class="fw-semibold fs-6" for="expiraciontarjeta" class="form-label">Fecha de
                                 expiración
                                 *</label>
-                            <input required placeholder="12/34" type="text" name="tarjeta" class="form-control mt-1" id="expiraciontarjeta">
+                            <input required placeholder="12/34" type="text" name="tarjeta" class="form-control mt-1"
+                                id="expiraciontarjeta">
                         </div>
                         <div class="mb-3">
                             <label class="fw-semibold fs-6" for="expiraciontarjeta" class="form-label">CVV
                                 *</label>
-                            <input required placeholder="123" type="text" name="tarjeta" class="form-control mt-1" id="expiraciontarjeta">
+                            <input required placeholder="123" type="text" name="tarjeta" class="form-control mt-1"
+                                id="expiraciontarjeta">
                         </div>
 
                     </div>
 
-                 
+
                 </form>
             </div>
 
-            <div class="w-100 bg-white p-4 py-4 mt-3" style="z-index: 1020;" id="stickyFooter">
+            <div class="w-100 bg-white d-lg-none p-4 py-4 mt-3 order-lg-3" style="z-index: 1020;" id="stickyFooter">
                 <div class="d-flex justify-content-between align-items-center">
                     <p class="m-0 fw-bold">TOTAL <span class="fw-light fs-6">(impuestos incluidos)</span></p>
                     <span class="fs-5 fw-semibold" style="color: #2b8687">131,25€</span>
                 </div>
-                <button type="submit" form="formularioCheckout" class="w-100 btn btn-primary btn-green rounded-pill py-2 mt-3 box-">Continuar</button>
+                <button type="submit" form="formularioCheckout"
+                    class="w-100 btn btn-primary btn-green rounded-pill py-2 mt-3 box-">Continuar</button>
             </div>
 
         </div>

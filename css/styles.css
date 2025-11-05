@@ -21,14 +21,17 @@
     --border-gray-color: #DFDEDE;
 
 }
+
 body,
 html {
     background-color: var(--bg-light-blue) !important;
 }
 
-header, nav {
+header,
+nav {
     background-color: white !important;
 }
+
 .ac-header-logo {
     width: 50px;
     height: auto;
@@ -339,4 +342,19 @@ footer .separator {
 .tarifa-selected {
     background-color: #edf7f7 !important;
     border: 2px solid #078585;
+}
+
+
+@media (min-width: 992px) {
+    .row .info {
+        position: sticky;
+        top: 30px;
+
+        /* Ajusta el valor según tu header u otros elementos */
+        z-index: 1020;
+        height: max-content;
+        /* Opcional, para que esté por encima */
+    }
+
+
 }
