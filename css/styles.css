@@ -365,7 +365,7 @@ footer .separator {
     color: var(--purple-text-dark) !important;
     transition: all 0.25s ease-in-out;
 
-} 
+}
 
 .header-nav-lg a::after {
     content: '';
@@ -378,11 +378,21 @@ footer .separator {
     transition: all 0.25s ease-in-out;
 }
 
-.header-nav-lg a.active, .header-nav-lg a:hover {
+.header-nav-lg a.active,
+.header-nav-lg a:hover {
     font-weight: 500 !important;
     transition: all 0.25s ease-in-out;
-} 
+}
 
-.header-nav-lg a.active::after, .header-nav-lg a:hover::after {
+.header-nav-lg a.active::after,
+.header-nav-lg a:hover::after {
     width: 100%;
-} 
+}
+
+@media (min-width: 992px) {
+    footer.px-lg-8 {
+        padding-left: 8rem !important;
+        padding-right: 8rem !important;
+        padding: 1.5rem 8rem !important;
+    }
+}

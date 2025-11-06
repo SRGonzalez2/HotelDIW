@@ -526,10 +526,10 @@
 
 
     <!--Footer Responsive-->
-    <footer class="container-fluid p-4">
+    <footer class="container-fluid px-lg-8 p-4">
         <div class="d-flex align-items-center justify-content-center py-2 gap-4">
             <div class="flex-05 col-4 bg-white separator"></div>
-            <svg style="max-width: 120px;" class="col-4" aria-hidden="true" focusable="false" fill="white"
+            <svg style="max-width: 75px;" class="col-4 mx-lg-5" aria-hidden="true" focusable="false" fill="white"
                 viewBox="0 0 159 94" id="logo" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M88.5093 92.5882H66.6524L50.5879 59.5583C45.6744 62.1915 41.9438 66.7731 38.0472 71.5568C34.9919 75.3076 31.8364 79.1838 27.9287 82.3421C23.3913 86.0051 18.097 89.2748 11.4914 91.4864C8.50346 92.4785 3.4129 93.7857 1.5014 93.9629C0.697624 94.0412 0.144541 94.0099 0.0191962 93.7293C-0.0716786 93.5067 0.144541 93.3375 1.00315 92.9362L1.77089 92.5914C3.33926 91.9017 6.43371 90.5349 8.50346 89.1086C11.6496 86.9534 13.4373 84.6101 13.583 82.8108C13.4248 82.2543 13.0817 81.5725 12.6743 80.7528C10.8709 77.1477 7.73572 70.8781 12.8592 60.9204C13.6805 59.3305 14.5246 57.7525 15.3911 56.1868C16.5788 54.0159 17.6223 52.1115 18.459 50.2024C20.0665 46.5629 21.1977 41.4171 21.5926 37.6099C21.6161 37.3873 21.6615 37.3983 21.7853 37.5206C24.8515 40.5801 36.7185 52.6257 34.9982 64.6147C38.9465 63.1194 45.7919 58.5755 48.9475 56.1523C49.7027 55.574 50.3983 54.9893 51.0626 54.4313C53.3345 52.5222 55.246 50.9156 57.9754 50.8733C59.7616 50.842 60.6233 51.3059 61.4913 51.7746C62.1588 52.1351 62.8309 52.4956 63.9261 52.6366C64.5482 52.715 65.4773 52.5912 65.9504 52.3686C66.1432 52.2793 66.0977 52.0677 65.8047 52.0003C64.3758 51.6648 63.3997 50.9909 62.4251 50.3184C61.062 49.378 59.702 48.4375 57.1152 48.4375C54.1273 48.4375 51.5985 50.4752 49.5569 52.1194C48.8769 52.6664 48.2518 53.1695 47.6815 53.541L36.4584 30.4657C31.7643 20.8105 33.1995 13.7979 43.495 0L88.5093 92.5914V92.5882ZM123.828 92.6008H110.252C104.528 92.6008 101.644 91.361 99.5506 88.6588C97.3101 85.7794 97.3101 81.3923 97.3101 77.2277V0.0329154H114.766V79.7042C114.766 86.0114 115.479 90.5224 123.828 92.3202V92.5977V92.6008ZM145.424 92.6008H159V92.3218C150.65 90.524 149.938 86.013 149.938 79.7057V0.0329154H132.483V77.2277C132.483 81.3923 132.483 85.7794 134.722 88.6588C136.816 91.361 139.7 92.6008 145.424 92.6008Z">
@@ -537,7 +537,7 @@
             </svg>
             <div class="flex-05 col-4 bg-white separator"></div>
         </div>
-        <div class="accordion mb-4" id="accordionFooter">
+        <div class="accordion mb-4 d-lg-none" id="accordionFooter">
             <!--Item 1-->
             <div class="accordion-item mt-3 border-0 border-bottom border-2 rounded-0 bg-transparent">
                 <h2 class="accordion-header rounded-0">
@@ -625,6 +625,61 @@
                         <a href="" class="text-white">Politica de Privacidad</a>
                         <a href="" class="text-white">Politica de Cookies</a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 row d-none d-lg-flex mt-3">
+            <div class="col-3">
+                <h4 class="fs-6 fw-bold" style="color: white">El Hotel</h4>
+                <div class="mt-1 d-flex flex-column gap-2">
+                    <a href="./reserva.html" class="text-white fs-7">Haz tu reserva</a>
+                    <a href="./habitaciones.html" class="text-white fs-7">Nuestras habitaciones</a>
+                    <a href="./index.html" class="text-white fs-7">Nuestros servicios</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <h4 class="fs-6 fw-bold" style="color: white">Contacto</h4>
+                <div class="mt-2 d-flex flex-column gap-2">
+                    <a href="" class="text-white text-decoration-none d-flex align-items-center fs-7"><svg class="me-2"
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail-icon lucide-mail">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                        </svg>hello@accor.com</a>
+                    <a href=""
+                        class="text-white text-decoration-none d-flex align-items-center d-flex align-items-center gap-2 fs-7"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone-icon lucide-phone">
+                            <path
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                        </svg>+34 666 666 666</a>
+                    <a href=""
+                        class="text-white text-decoration-none d-flex fs-7 align-items-center align-items-center gap-2"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Duques de Najera, Logroño, España</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <h4 class="fs-6 fw-bold" style="color: white">¿Necesitas ayuda?</h4>
+                <div class="mt-2 d-flex flex-column gap-2">
+                    <a class="fs-7 text-white" href="" class="text-white">Gestionar mi reserva</a>
+                    <a class="fs-7 text-white" href="" class="text-white">Problemas con el pago</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <h4 class="fs-6 fw-bold" style="color: white">Términos Legales</h4>
+                <div class="mt-2 d-flex flex-column gap-2">
+                    <a href="" class="text-white fs-7">Aviso legal</a>
+                    <a href="" class="text-white fs-7">Politica de Privacidad</a>
+                    <a href="" class="text-white fs-7">Politica de Cookies</a>
                 </div>
             </div>
         </div>
