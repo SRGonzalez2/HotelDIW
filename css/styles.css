@@ -359,3 +359,30 @@ footer .separator {
     }
 
 }
+
+.header-nav-lg a {
+    position: relative;
+    color: var(--purple-text-dark) !important;
+    transition: all 0.25s ease-in-out;
+
+} 
+
+.header-nav-lg a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    background-color: var(--purple-text-dark);
+    left: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.header-nav-lg a.active, .header-nav-lg a:hover {
+    font-weight: 500 !important;
+    transition: all 0.25s ease-in-out;
+} 
+
+.header-nav-lg a.active::after, .header-nav-lg a:hover::after {
+    width: 100%;
+} 
