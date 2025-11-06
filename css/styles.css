@@ -349,12 +349,13 @@ footer .separator {
     .row .info {
         position: sticky;
         top: 30px;
-
-        /* Ajusta el valor según tu header u otros elementos */
         z-index: 1020;
         height: max-content;
-        /* Opcional, para que esté por encima */
     }
 
+    .row.checkout {
+        gap: 25px;
+        flex-wrap: nowrap;
+    }
 
 }
