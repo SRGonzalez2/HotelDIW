@@ -389,10 +389,19 @@ footer .separator {
     width: 100%;
 }
 
+#gallery img {
+    max-height: 350px;
+}
+
 @media (min-width: 992px) {
     footer.px-lg-8 {
         padding-left: 8rem !important;
         padding-right: 8rem !important;
         padding: 1.5rem 8rem !important;
+    }
+
+    .carousel-item img {
+        max-height: 350px !important;
+        object-fit: cover;
     }
 }

@@ -83,7 +83,7 @@
             </div>
     </nav>
     <!--Carousel principal-->
-    <section id="carouselPrincipal" class="carousel slide carousel-fade mh-lg-10" data-bs-ride="carousel"
+    <section id="carouselPrincipal" class="carousel slide carousel-fade mh-lg-10 d-lg-none" data-bs-ride="carousel"
         data-bs-interval="3000">
 
         <div class="ac-hero-indicators carousel-indicators">
@@ -115,17 +115,41 @@
         </button>
 
     </section>
+
+    <!--Galeria fotos pantallas grandes-->
+    <section class="w-100 d-none d-lg-inline-block" id="gallery">
+        <div class="row gx-1">
+            <div class="col-3">
+                <img src="https://www.ahstatic.com/photos/6903_ho_00_p_1024x768.jpg" alt="Imagen del hotel">
+            </div>
+            <div class="col-3">
+                <img src="https://www.ahstatic.com/photos/6903_ho_01_p_1024x768.jpg" alt="Imagen del hotel">
+            </div>
+            <div class="col-3">
+                <img src="https://www.ahstatic.com/photos/6903_ho_02_p_1024x768.jpg" alt="Imagen del hotel">
+            </div>
+            <div class="col-3">
+                <img src="http://ahstatic.com/photos/6903_ho_03_p_1024x768.jpg" alt="Imagen del hotel">
+            </div>
+
+            
+        </div>
+    </section>
+
+
     <!--Seccion formulario-->
     <main class="container-fluid ac-main py-3 ">
         <div class="row justify-content-center g-2 gx-5">
             <div
-                class="col-lg-6 col-md col-sm-10 mw-2 d-flex flex-column justify-content-center align-items-center p-0 w-80-max mt-lg-3">
-                <h1 class="text-center text-break m-0 fw-bold">Ibis Munich City West ***</h1>
+                class="col-lg-6 col-md col-sm-10 mw-2 d-flex justify-content-center align-items-center p-0 w-80-max mt-lg-3">
+                <img height="70px" class="d-none d-lg-inline" src="https://all.accor.com/fact-sheet/assets/icons/brands/full/color/ibh.svg" alt="Logo de ibis">
+                <h1 class="text-center text-break m-0 fw-bold">
+                    Ibis Munich City West ***</h1>
             </div>
             <form action="" class="mt-4 px-md-5 mx-auto">
-                <div class="row align-items-center justify-content-center gx-3 gy-3 ">
+                <div class="row my-lg-1 align-items-center justify-content-center gx-3 gy-3 ">
                     <!-- Fecha de Entrada -->
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-3 mt-lg-0">
                         <div class="form-floating">
                             <input type="text" class="form-control custom-floating-height fs-8 fw-semibold"
                                 id="fechaEntrada" placeholder="29/10/2025" value="29 de octubre de 2025">
@@ -145,7 +169,7 @@
                     </div>
 
                     <!-- Fecha de Salida -->
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-3  mt-lg-0">
                         <div class="form-floating">
                             <input type="text" class="form-control custom-floating-height fs-8 fw-semibold"
                                 id="fechaSalida" placeholder="31/10/2025" value="31 de octubre de 2025">
@@ -165,7 +189,7 @@
                     </div>
 
                     <!-- Huéspedes -->
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3  mt-lg-0">
                         <div class="dropdown">
                             <button
                                 class="btn dropdown-toggle bg-white w-100 text-start position-relative fs-8 fw-semibold"
