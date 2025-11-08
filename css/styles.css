@@ -192,6 +192,7 @@ select {
     background-image: url("../assets/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     min-height: 220px;
 
@@ -391,6 +392,46 @@ footer .separator {
 
 #gallery img {
     max-height: 350px;
+    width: 100%;
+}
+
+.tab-header-element {
+    position: relative;
+}
+
+.tab-header-element::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    left: 0px;
+    bottom: -5px;
+    position: absolute;
+    background-color: #078585;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-header-element:hover {
+    cursor: pointer;
+    background-color: #078585;
+    color: white;
+    font-weight: 500;
+}
+
+.tab-header-element:hover::after,
+.tab-header-element.active::after {
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.ac-rooms-lg swiper-slide {
+    width: max-content
+}
+
+.ac-rooms-lg .room-card {
+    width: max-content
 }
 
 @media (min-width: 992px) {
@@ -403,5 +444,41 @@ footer .separator {
     .carousel-item img {
         max-height: 350px !important;
         object-fit: cover;
+
     }
+
+
+    .ac-about {
+        position: relative;
+    }
+
+    .ac-about h5 {
+        font-size: 1.2rem !important;
+    }
+
+    .ac-about p {
+        font-size: 1rem !important;
+    }
+
+    .ac-about>div:first-of-type::after {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+        bottom: 200px;
+        content: '';
+        height: 4.375rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.showBlock {
+    display: block !important;
+}
+
+#servicesTab {
+    display: none;
+}
+
+#roomsTab {
+    display: block;
 }
