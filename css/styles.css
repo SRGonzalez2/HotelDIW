@@ -231,6 +231,7 @@ select {
     box-shadow: none !important;
 }
 
+
 .room-card {
     max-width: 400px;
     max-height: max-content !important;
@@ -434,6 +435,7 @@ footer .separator {
     width: max-content
 }
 
+
 @media (min-width: 992px) {
     footer.px-lg-8 {
         padding-left: 8rem !important;
@@ -447,6 +449,21 @@ footer .separator {
 
     }
 
+    #carouselCard .carousel-item img {
+        height: 100% !important;
+        max-height: 250px;
+        object-fit: cover;
+
+    }
+
+    #carouselCard .carousel-item img {
+        border-top-right-radius: 0px !important;
+    }
+
+
+    #carouselCard .carousel-item {
+        height: 100% !important;
+    }
 
     .ac-about {
         position: relative;
@@ -469,6 +486,11 @@ footer .separator {
         position: absolute;
         width: 100%;
     }
+
+    .card.reserva .card-title {
+        max-width: 90% !;
+    }
+
 }
 
 .showBlock {
@@ -481,4 +503,20 @@ footer .separator {
 
 #roomsTab {
     display: block;
+}
+
+
+.ac-ofertas.reservas {
+    position: relative;
+}
+
+.ac-ofertas.reservas::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/banner.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.85);
+    z-index: 0;
 }

@@ -84,10 +84,11 @@
     </nav>
 
     <!--Formulario-->
-    <main class="container-fluid ac-main p-4 ">
-        <div class="row justify-content-center g-2 gx-5 w-100 mx-auto ">
+    <main class="container ac-main p-4 ">
+        <div class="row g-2 gx-5 w-100 mx-auto mt-lg-2 ">
             <div class="col-lg-6 col-md col-sm-10 mw-2 d-flex flex-column justify-content-center p-0 w-80-max mt-lg-3">
-                <h1 class="m-0 fw-bold fs-3">Ibis Munich City West ***</h1>
+                <h1 class="m-0 fw-bold fs-3"> <img height="40px" class="d-none d-lg-inline me-3" src="./assets/ibh.webp"
+                        alt="Logo de ibis">Ibis Munich City West ***</h1>
                 <div class="d-flex flex-column gap-0 mt-4">
                     <span class="fs-7 fw-medium text-dark d-flex align-content-center"><svg class="me-1"
                             xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -107,16 +108,15 @@
                         </svg>Ver en el mapa</span>
                 </div>
             </div>
-            <form action="" class="mt-3 p-0">
-                <div class="row align-items-center justify-content-center gx-3 gy-3">
+            <form action="" class="mt-4 px-0 mx-lg-0 mx-auto">
+                <div class="row my-lg-1 align-items-center  gx-3 gy-3 ">
                     <!-- Fecha de Entrada -->
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-3 mt-lg-0">
                         <div class="form-floating">
                             <input type="text" class="form-control custom-floating-height fs-8 fw-semibold"
                                 id="fechaEntrada" placeholder="29/10/2025" value="29 de octubre de 2025">
-                            <label for="fechaEntrada" class="d-flex align-items-center gap-2 fw-medium"
-                                style="font-size: 0.9rem;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            <label for="fechaEntrada" class="d-flex align-items-center gap-2 fw-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="#6B6594" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-calendar-arrow-down">
                                     <path d="m14 18 4 4 4-4" />
@@ -131,13 +131,12 @@
                     </div>
 
                     <!-- Fecha de Salida -->
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-3  mt-lg-0">
                         <div class="form-floating">
                             <input type="text" class="form-control custom-floating-height fs-8 fw-semibold"
                                 id="fechaSalida" placeholder="31/10/2025" value="31 de octubre de 2025">
-                            <label for="fechaSalida" class="d-flex align-items-center gap-2 fw-medium"
-                                style="font-size: 0.9rem;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            <label for="fechaSalida" class="d-flex align-items-center gap-2 fw-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="#6B6594" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-calendar-arrow-up">
                                     <path d="m14 18 4-4 4 4" />
@@ -152,14 +151,13 @@
                     </div>
 
                     <!-- Huéspedes -->
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3  mt-lg-0">
                         <div class="dropdown">
                             <button
                                 class="btn dropdown-toggle bg-white w-100 text-start position-relative fs-8 fw-semibold"
                                 type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span
-                                    class="position-absolute top-0 mt-1 fs-8 fw-medium d-flex align-items-center gap-2"
-                                    style="color: rgba(33,37,41, 0.65)">
+                                    class="position-absolute top-0 mt-1 fs-8 fw-medium d-flex align-items-center gap-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="#6B6594" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="lucide lucide-user">
@@ -205,7 +203,8 @@
 
                     <!-- Botón -->
                     <div class="col-12 col-lg-2 mt-3 mt-lg-0">
-                        <button class="btn btn-primary btn-green w-100 border-0 rounded-pill fw-medium py-8d ">
+                        <button onclick="window.location.href = '/reserva.html'"
+                            class="btn btn-primary btn-green w-100 border-0 rounded-pill fw-medium py-8d">
                             Ver disponibilidad
                         </button>
                     </div>
@@ -217,306 +216,390 @@
 
     <!--Ofertas-->
     <div class="container-fluid p-0">
-        <div class="ac-ofertas d-flex flex-column justify-content-center px-4 col-12 col-md-4 w-100">
-            <h3 class="fs-1 fw-bold text-white ">Ahorra hasta un 25%</h3>
-            <p class="text-white fw-semibold fs-6">En estancias de un minimo de 2 noches</p>
-            <button class="btn btn-primary btn-white fw-semibold border-0 rounded-pill w-25">Ahorra ya</button>
+        <div
+            class="ac-ofertas reservas d-flex flex-column justify-content-center align-items-lg-center px-5 col-12 col-md-4 w-100 mt-lg-2">
+
+            <h3 class="fs-1 fw-bold text-white z-1">Ahorra hasta un 25%</h3>
+            <p class="text-white fw-semibold fs-5 z-1">En estancias de un minimo de 2 noches</p>
+            <button class="btn btn-primary btn-white fw-semibold border-0 rounded-pill w-25 z-1">Ahorra ya</button>
+
         </div>
     </div>
 
     <!--Habitaciones disponibles-->
-    <div class="container-fluid p-4 pt-5">
+    <div class="container p-4 px-lg-0 pt-5">
         <div class="d-flex flex-column gap-0 mb-4">
             <h5 class="fw-bold mb-1" style="color: #252339">Habitaciones Disponibles</h5>
             <span class="fw-medium mt-0" style="color: #252339">(2 resultados mostrados)</span>
         </div>
 
-        <div class="d-flex flex-wrap gap-5">
-            <div class="room-card b-blue card w-100 rounded-3 my-0 border-2">
-                <!--Carousel de la card-->
-                <section id="carouselCard" class="carousel slide carousel-fade position-relative carousel-card">
+        <div class="row no-gutters">
+            <div class="col-12 col-lg-7">
+                <div class="card reserva mb-3 b-blue border-2" style="max-width: 800px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <section id="carouselCard"
+                                class="carousel slide carousel-fade position-relative carousel-card h-100">
 
-                    <div class="card-indicators carousel-indicators">
-                        <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="0"
-                            class="active rounded-pill border-0" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" class="rounded-pill border-0" data-bs-target="#carouselCard"
-                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" class="rounded-pill border-0" data-bs-target="#carouselCard"
-                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <div class="card-indicators carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="0"
+                                        class="active rounded-pill border-0" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" class="rounded-pill border-0" data-bs-target="#carouselCard"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" class="rounded-pill border-0" data-bs-target="#carouselCard"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.ahstatic.com/photos/6903_rodbc_00_p_2048x1536.jpg"
+                                            class="d-block w-100 card-img-top" alt="Foto de la habitacion">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="card-img-top"
+                                            src="https://www.ahstatic.com/photos/6903_rodbc_02_p_2048x1536.jpg"
+                                            class="d-block w-100 card-img-top" alt="Foto de la habitacion">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="card-img-top"
+                                            src="https://www.ahstatic.com/photos/6903_rodbc_04_p_2048x1536.jpg"
+                                            class="d-block w-100 card-img-top" alt="Foto de la habitacion">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselCard"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <span class="badge position-absolute z-3 d-flex align-items-center gap-2 fw-light "><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16q" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="#B1B2B3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-copy-icon lucide-copy">
+                                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                                    </svg>3</span>
+                            </section>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body p-4">
+
+                                <h5 class="card-title fs-4 w-75">Habitacion Standard con <strong>1 cama
+                                        doble</strong></h5>
+                                <p class="fw-medium fs-7 mb-1 ">2 pers. máx</p>
+                                <div class="w-100 my-2">
+                                    <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-bed-double-icon lucide-bed-double">
+                                            <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
+                                            <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
+                                            <path d="M12 4v6" />
+                                            <path d="M2 18h20" />
+                                        </svg>
+                                        1 x Cama/s doble/s
+                                    </p>
+                                    <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-book-image-icon lucide-book-image">
+                                            <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17" />
+                                            <path
+                                                d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                                            <circle cx="10" cy="8" r="2" />
+                                        </svg>
+                                        Orientada a la ciudad
+                                    </p>
+                                </div>
+
+                                <div class="d-flex align-items-center room-badges gap-2 flex-wrap mt-3">
+                                    <span class="badge rounded-1 p-2 fs-9">16 m2</span>
+                                    <span class="badge rounded-1 p-2 fs-9">Ducha italiana</span>
+                                    <span class="badge rounded-1 p-2 fs-9">Planta alta</span>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-4 pb-0 pt-0 pt-lg-4">
+                                <div class="bg-gray rounded-2 d-flex flex-column p-3 tarifa-selected">
+                                    <div class="upper d-flex flex-column flex-wrap gap-2">
+                                        <div class=" d-flex align-items-center">
+                                            <input type="radio" checked name="card2" id="">
+                                            <span class="m-0 fw-semibold fs-8 ms-2">TARIFA PREPAGADA</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-ban-icon lucide-ban">
+                                                <path d="M4.929 4.929 19.07 19.071" />
+                                                <circle cx="12" cy="12" r="10" />
+                                            </svg>
+                                            <span class="m-0 fw-medium fs-8 ms-2">No reembolsable</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-credit-card-icon lucide-credit-card">
+                                                <rect width="20" height="14" x="2" y="5" rx="2" />
+                                                <line x1="2" x2="22" y1="10" y2="10" />
+                                            </svg>
+                                            <span class="m-0 fw-medium fs-8 ms-2">Pago en línea</span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="lower d-flex flex-column justify-content-center w-100 prices flex-wrap gap-2 mt-3">
+                                        <div class="d-flex flex-column h-100">
+                                            <span
+                                                class="badge members w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
+                                                premium</span>
+                                            <span class="price fs-4 fw-bold"><span style="color: black"
+                                                    class="fw-bold fs-6">Desde</span> 131,25€</span>
+                                        </div>
+
+                                        <div class="d-flex flex-column w-50 h-100">
+                                            <span
+                                                class="badge public w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
+                                                publica</span>
+                                            <span class="price fs-4 fw-medium"><span style="color: black"
+                                                    class="fw-bold fs-6">Desde
+                                                </span>145,80€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <div class="bg-gray rounded-2 d-flex flex-column p-3 mt-3">
+                                    <div class="upper d-flex flex-column flex-wrap gap-2">
+                                        <div class=" d-flex align-items-center">
+                                            <input type="radio" name="card2" id="">
+                                            <span class="m-0 fw-semibold fs-8 ms-2">TARIFA PREPAGADA + DESAYUNO
+                                                INCLUIDO</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-ban-icon lucide-ban">
+                                                <path d="M4.929 4.929 19.07 19.071" />
+                                                <circle cx="12" cy="12" r="10" />
+                                            </svg>
+                                            <span class="m-0 fw-medium fs-8 ms-2">No reembolsable</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-credit-card-icon lucide-credit-card">
+                                                <rect width="20" height="14" x="2" y="5" rx="2" />
+                                                <line x1="2" x2="22" y1="10" y2="10" />
+                                            </svg>
+                                            <span class="m-0 fw-medium fs-8 ms-2">Pago en línea</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-coffee-icon lucide-coffee">
+                                                <path d="M10 2v2" />
+                                                <path d="M14 2v2" />
+                                                <path
+                                                    d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" />
+                                                <path d="M6 2v2" />
+                                            </svg>
+                                            <span class="m-0 fw-medium fs-8 ms-2">Desayuno incluido</span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="lower d-flex flex-column justify-content-center w-100 prices flex-wrap gap-2 mt-3">
+                                        <div class="d-flex flex-column h-100">
+                                            <span
+                                                class="badge members w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
+                                                premium</span>
+                                            <span class="price fs-4 fw-bold"><span style="color: black"
+                                                    class="fw-bold fs-6">Desde</span> 140,25€</span>
+                                        </div>
+
+                                        <div class="d-flex flex-column w-50 h-100">
+                                            <span
+                                                class="badge public w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
+                                                publica</span>
+                                            <span class="price fs-4 fw-medium"><span style="color: black"
+                                                    class="fw-bold fs-6">Desde
+                                                </span>152,80€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.ahstatic.com/photos/6903_rodbc_00_p_2048x1536.jpg"
-                                class="d-block w-100 card-img-top" alt="Foto de la habitacion">
+                </div>
+
+                <div class="card reserva mb-3 b-blue border-2" style="max-width: 800px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <section id="carouselCard"
+                                class="carousel slide carousel-fade position-relative carousel-card h-100">
+
+                                <div class="card-indicators carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="0"
+                                        class="active rounded-pill border-0" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" class="rounded-pill border-0" data-bs-target="#carouselCard"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" class="rounded-pill border-0" data-bs-target="#carouselCard"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.ahstatic.com/photos/6903_rotwc_00_p_2048x1536.jpg"
+                                            class="d-block w-100 card-img-top" alt="Foto de la habitacion">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.ahstatic.com/photos/6903_rotwc_01_p_2048x1536.jpg"
+                                            class="d-block w-100 card-img-top" alt="Foto de la habitacion">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.ahstatic.com/photos/6903_rotwc_05_p_2048x1536.jpg"
+                                            class="d-block w-100 card-img-tops" alt="Foto de la habitacion">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselCard"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <span class="badge position-absolute z-3 d-flex align-items-center gap-2 fw-light "><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16q" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="#B1B2B3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-copy-icon lucide-copy">
+                                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                                    </svg>3</span>
+                            </section>
                         </div>
-                        <div class="carousel-item">
-                            <img class="card-img-top"
-                                src="https://www.ahstatic.com/photos/6903_rodbc_02_p_2048x1536.jpg"
-                                class="d-block w-100 card-img-top" alt="Foto de la habitacion">
+                        <div class="col-md-7">
+                            <div class="card-body p-4">
+
+                                <h5 class="card-title fs-4">Habitacion Standard con <strong>1 cama
+                                        doble</strong></h5>
+                                <p class="fw-medium fs-7 mb-1 ">2 pers. máx</p>
+                                <div class="w-100 my-2">
+                                    <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-bed-double-icon lucide-bed-double">
+                                            <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
+                                            <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
+                                            <path d="M12 4v6" />
+                                            <path d="M2 18h20" />
+                                        </svg>
+                                        1 x Cama/s doble/s
+                                    </p>
+                                    <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-book-image-icon lucide-book-image">
+                                            <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17" />
+                                            <path
+                                                d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                                            <circle cx="10" cy="8" r="2" />
+                                        </svg>
+                                        Orientada a la ciudad
+                                    </p>
+                                </div>
+
+                                <div class="d-flex align-items-center room-badges gap-2 flex-wrap mt-3">
+                                    <span class="badge rounded-1 p-2 fs-9">16 m2</span>
+                                    <span class="badge rounded-1 p-2 fs-9">Ducha italiana</span>
+                                    <span class="badge rounded-1 p-2 fs-9">Planta alta</span>
+                                </div>
+
+
+                                <button
+                                    class="btn btn-primary border-0 w-100 text-center rounded-pill mt-4 py-8d">Quiero
+                                    esta
+                                    habitacion <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                    </svg></button>
+
+
+
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="card-img-top"
-                                src="https://www.ahstatic.com/photos/6903_rodbc_04_p_2048x1536.jpg"
-                                class="d-block w-100 card-img-top" alt="Foto de la habitacion">
-                        </div>
+
                     </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCard"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    <span class="badge position-absolute z-3 d-flex align-items-center gap-2 fw-light "><svg
-                            xmlns="http://www.w3.org/2000/svg" width="16q" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="#B1B2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-copy-icon lucide-copy">
-                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-                        </svg>3</span>
-                </section>
-                <!--Body de la card-->
-                <div class="card-body p-4">
-                    <h5 class="card-title fs-4">Habitacion Standard con <strong>1 cama
-                            doble</strong></h5>
-                    <p class="fw-medium fs-7 mb-1 ">2 pers. máx</p>
-                    <div class="w-100 my-2">
-                        <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
-                            <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-bed-double-icon lucide-bed-double">
-                                <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
-                                <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
-                                <path d="M12 4v6" />
-                                <path d="M2 18h20" />
-                            </svg>
-                            1 x Cama/s doble/s
-                        </p>
-                        <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
-                            <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-book-image-icon lucide-book-image">
-                                <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17" />
-                                <path
-                                    d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
-                                <circle cx="10" cy="8" r="2" />
-                            </svg>
-                            Orientada a la ciudad
-                        </p>
-                    </div>
-
-                    <div class="d-flex align-items-center room-badges gap-2 flex-wrap my-3">
-                        <span class="badge rounded-1 p-2 fs-9">16 m2</span>
-                        <span class="badge rounded-1 p-2 fs-9">Ducha italiana</span>
-                        <span class="badge rounded-1 p-2 fs-9">Planta alta</span>
-                    </div>
-
-                    <div class="bg-gray rounded-2 d-flex flex-column p-3 tarifa-selected">
-                        <div class="upper d-flex flex-column flex-wrap gap-2">
-                            <div class=" d-flex align-items-center">
-                                <input type="radio" checked name="card2" id="">
-                                <span class="m-0 fw-semibold fs-8 ms-2">TARIFA PREPAGADA</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-ban-icon lucide-ban">
-                                    <path d="M4.929 4.929 19.07 19.071" />
-                                    <circle cx="12" cy="12" r="10" />
-                                </svg>
-                                <span class="m-0 fw-medium fs-8 ms-2">No reembolsable</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-credit-card-icon lucide-credit-card">
-                                    <rect width="20" height="14" x="2" y="5" rx="2" />
-                                    <line x1="2" x2="22" y1="10" y2="10" />
-                                </svg>
-                                <span class="m-0 fw-medium fs-8 ms-2">Pago en línea</span>
-                            </div>
-                        </div>
-
-                        <div class="lower d-flex flex-column justify-content-center w-100 prices flex-wrap gap-2 mt-3">
-                            <div class="d-flex flex-column h-100">
-                                <span
-                                    class="badge members w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
-                                    premium</span>
-                                <span class="price fs-4 fw-bold"><span style="color: black"
-                                        class="fw-bold fs-6">Desde</span> 131,25€</span>
-                            </div>
-
-                            <div class="d-flex flex-column w-50 h-100">
-                                <span
-                                    class="badge public w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
-                                    publica</span>
-                                <span class="price fs-4 fw-medium"><span style="color: black" class="fw-bold fs-6">Desde
-                                    </span>145,80€</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-gray rounded-2 d-flex flex-column p-3 mt-3">
-                        <div class="upper d-flex flex-column flex-wrap gap-2">
-                            <div class=" d-flex align-items-center">
-                                <input type="radio" name="card2" id="">
-                                <span class="m-0 fw-semibold fs-8 ms-2">TARIFA PREPAGADA + DESAYUNO INCLUIDO</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-ban-icon lucide-ban">
-                                    <path d="M4.929 4.929 19.07 19.071" />
-                                    <circle cx="12" cy="12" r="10" />
-                                </svg>
-                                <span class="m-0 fw-medium fs-8 ms-2">No reembolsable</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-credit-card-icon lucide-credit-card">
-                                    <rect width="20" height="14" x="2" y="5" rx="2" />
-                                    <line x1="2" x2="22" y1="10" y2="10" />
-                                </svg>
-                                <span class="m-0 fw-medium fs-8 ms-2">Pago en línea</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-coffee-icon lucide-coffee">
-                                    <path d="M10 2v2" />
-                                    <path d="M14 2v2" />
-                                    <path
-                                        d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" />
-                                    <path d="M6 2v2" />
-                                </svg>
-                                <span class="m-0 fw-medium fs-8 ms-2">Desayuno incluido</span>
-                            </div>
-                        </div>
-
-                        <div class="lower d-flex flex-column justify-content-center w-100 prices flex-wrap gap-2 mt-3">
-                            <div class="d-flex flex-column h-100">
-                                <span
-                                    class="badge members w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
-                                    premium</span>
-                                <span class="price fs-4 fw-bold"><span style="color: black"
-                                        class="fw-bold fs-6">Desde</span> 140,25€</span>
-                            </div>
-
-                            <div class="d-flex flex-column w-50 h-100">
-                                <span
-                                    class="badge public w-auto fs-9 fw-semibold px-2 py-2 rounded-1 text-start align-self-start">Tarifa
-                                    publica</span>
-                                <span class="price fs-4 fw-medium"><span style="color: black" class="fw-bold fs-6">Desde
-                                    </span>152,80€</span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-
-            <div class="room-card b-blue card w-100 rounded-3 my-0 border-2">
-                <!--Carousel de la card-->
-                <section id="carouselCard2" class="carousel slide carousel-fade position-relative carousel-card">
-
-                    <div class="card-indicators carousel-indicators">
-                        <button type="button" data-bs-target="#carouselCard2" data-bs-slide-to="0"
-                            class="active rounded-pill border-0" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" class="rounded-pill border-0" data-bs-target="#carouselCard2"
-                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" class="rounded-pill border-0" data-bs-target="#carouselCard"
-                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="col-5 info d-none d-lg-inline-block ">
+                <div style="height: 300px; border-color: var(--border-gray-color);"
+                    class="border-2 bg-white border rounded-2 shadow-sm p-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="m-0">Tu estancia</h5>
+                        <a href="" class="text-nowrap">Ver detalles</a>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.ahstatic.com/photos/6903_rotwc_00_p_2048x1536.jpg"
-                                class="d-block w-100 card-img-top" alt="Foto de la habitacion">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.ahstatic.com/photos/6903_rotwc_01_p_2048x1536.jpg"
-                                class="d-block w-100 card-img-top" alt="Foto de la habitacion">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.ahstatic.com/photos/6903_rotwc_05_p_2048x1536.jpg"
-                                class="d-block w-100 card-img-tops" alt="Foto de la habitacion">
-                        </div>
+                    <h6 class="fs-10 mt-4 fw-semibold">IBIS MUNICH CITY WEST</h6>
+                    <div class="d-flex align-items-center mt-3">
+                        <span class="fs-7">16 de noviembre de 2025</span>
+                        <svg data-v-8be5ab8c="" class="mx-2" style="width: 40px; height: 40px;"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 21 12" focusable="false"
+                            class="icon">
+                            <path
+                                d="M18.3 5.15 14.52.94a.51.51 0 0 1-.02-.69c.18-.23.48-.31.67-.1l4.65 5.25h.01a.77.77 0 0 1 0 .98l-4.91 5.53c-.19.21-.57.12-.75-.1-.17-.22-.1-.55.08-.76l4.32-4.78a.47.47 0 0 1-.13.02H.5c-.28 0-.5-.24-.5-.54 0-.3.22-.53.5-.53l17.8-.07z">
+                            </path>
+                        </svg>
+                        <span class="fs-7">18 de noviembre de 2025</span>
+                    </div>
+                    <span class="fs-8 fw-medium mt-lg-2">2 noches / 1 adulto</span>
+
+                    <div class="d-lg-flex d-none mt-4 justify-content-between align-items-center">
+                        <p class="m-0 fw-bold">TOTAL <span class="fw-light fs-6">(impuestos incluidos)</span></p>
+                        <span class="fs-5 fw-semibold" style="color: #2b8687">131,25€</span>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard2"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                    <button type="submit" form="formularioCheckout"
+                        class="w-100 d-none d-lg-block btn btn-primary btn-green rounded-pill py-2 mt-3 box-">Continuar
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCard2"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    <span class="badge position-absolute z-3 d-flex align-items-center gap-2 fw-light "><svg
-                            xmlns="http://www.w3.org/2000/svg" width="16q" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="#B1B2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-copy-icon lucide-copy">
-                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-                        </svg>3</span>
-                </section>
-                <!--Body de la card-->
-                <div class="card-body p-4">
-                    <h5 class="card-title fs-4">Habitacion Standard con <strong>1 cama
-                            doble</strong></h5>
-                    <p class="fw-medium fs-7 mb-1 ">2 pers. máx</p>
-                    <div class="w-100 my-2">
-                        <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
-                            <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-bed-double-icon lucide-bed-double">
-                                <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
-                                <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
-                                <path d="M12 4v6" />
-                                <path d="M2 18h20" />
-                            </svg>
-                            1 x Cama/s doble/s
-                        </p>
-                        <p class="mb-2 fs-7 fw-medium d-flex align-items-center">
-                            <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="#1D1852" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-book-image-icon lucide-book-image">
-                                <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17" />
-                                <path
-                                    d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
-                                <circle cx="10" cy="8" r="2" />
-                            </svg>
-                            Orientada a la ciudad
-                        </p>
-                    </div>
-
-                    <div class="d-flex align-items-center room-badges gap-2 flex-wrap my-3">
-                        <span class="badge rounded-1 p-2 fs-9">16 m2</span>
-                        <span class="badge rounded-1 p-2 fs-9">Ducha italiana</span>
-                        <span class="badge rounded-1 p-2 fs-9">Planta alta</span>
-                    </div>
-
-
-                    <button class="btn btn-primary border-0 w-100 text-center rounded-pill mt-4 py-8d">Quiero
-                        esta
-                        habitacion <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                            <path d="m9 18 6-6-6-6" />
-                        </svg></button>
                 </div>
             </div>
         </div>
+
+
+
+
+
     </div>
 
 
 
-    <div class="position-sticky bottom-0 w-100 bg-white p-4 py-4" style="z-index: 1020;" id="stickyFooter">
+    <div class="position-sticky bottom-0 w-100 bg-white p-4 py-4 d-lg-none" style="z-index: 1020;" id="stickyFooter">
         <div class="d-flex justify-content-between align-items-center">
             <p class="m-0 fw-bold">TOTAL <span class="fw-light fs-6">(impuestos incluidos)</span></p>
             <span class="fs-5 fw-semibold" style="color: #2b8687">131,25€</span>
