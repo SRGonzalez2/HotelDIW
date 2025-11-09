@@ -111,6 +111,11 @@ nav {
     background-color: var(--button-primary-bg-green);
 }
 
+.btn.btn-primary.btn-green.outline {
+    border: 1.75px solid var(--button-primary-bg-green) !important;
+    color: var(--button-primary-bg-green) !important;
+}
+
 .btn.btn-primary.btn-white {
     background-color: var(--button-primary-bg-white);
     color: var(--purple-text-dark)
@@ -449,19 +454,26 @@ footer .separator {
 
     }
 
-    #carouselCard .carousel-item img {
+    #carouselCard .carousel-item img,
+    #carouselCard2 .carousel-item img {
         height: 100% !important;
         max-height: 250px;
         object-fit: cover;
 
     }
 
-    #carouselCard .carousel-item img {
+    #roundedForm {
+        border-radius: 500px !important;
+    }
+
+    #carouselCard .carousel-item img,
+    #carouselCard2 .carousel-item img {
         border-top-right-radius: 0px !important;
     }
 
 
-    #carouselCard .carousel-item {
+    #carouselCard .carousel-item,
+    #carouselCard2 .carousel-item {
         height: 100% !important;
     }
 
