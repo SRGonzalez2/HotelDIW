@@ -585,8 +585,8 @@
                         <span class="fs-5 fw-semibold" style="color: #2b8687">131,25€</span>
                     </div>
 
-                    <button type="submit" form="formularioCheckout"
-                        class="w-100 d-none d-lg-block btn btn-primary btn-green rounded-pill py-2 mt-3 box-">Continuar
+                    <button type="submit" form="formularioCheckout" onclick="event.preventDefault(); window.location.href = '/checkout.html'"
+                        class="w-100 d-none d-lg-block border-0 btn btn-primary btn-green rounded-pill py-2 mt-3 box-">Continuar
                     </button>
                 </div>
             </div>
@@ -605,7 +605,7 @@
             <p class="m-0 fw-bold">TOTAL <span class="fw-light fs-6">(impuestos incluidos)</span></p>
             <span class="fs-5 fw-semibold" style="color: #2b8687">131,25€</span>
         </div>
-        <button class="w-100 btn btn-primary btn-green rounded-pill py-2 mt-3 box-">Continuar</button>
+        <button onclick="event.preventDefault(); window.location.href = '/checkout.html'" class="w-100 btn btn-primary btn-green rounded-pill border-0 py-2 mt-3 box-">Continuar</button>
     </div>
 
 

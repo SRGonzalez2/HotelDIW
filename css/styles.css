@@ -15,6 +15,7 @@
     --border-secondary-color: #DEDEE0;
     --button-primary-bg: #1D1852;
     --button-primary-bg-green: #2b8687;
+    --button-primary-bg-green-hover: #196061;
     --button-primary-bg-white: #fcfcfc;
     --text-blue: #1264A3;
     --bg-light-blue: #ebeef5;
@@ -107,8 +108,18 @@ nav {
     color: var(--button-primary-bg)
 }
 
+.btn-primary.outline:hover {
+    background-color: var(--button-primary-bg) !important;
+    color: white !important;
+}
+
 .btn.btn-primary.btn-green {
     background-color: var(--button-primary-bg-green);
+}
+
+.btn.btn-primary.btn-green:hover {
+    background-color: var(--button-primary-bg-green-hover);
+
 }
 
 .btn.btn-primary.btn-green.outline {
@@ -116,9 +127,18 @@ nav {
     color: var(--button-primary-bg-green) !important;
 }
 
+.btn.btn-primary.btn-green.outline:hover {
+    background-color: var(--button-primary-bg-green) !important;
+    color: white !important;
+}
+
 .btn.btn-primary.btn-white {
     background-color: var(--button-primary-bg-white);
     color: var(--purple-text-dark)
+}
+
+.btn.btn-primary.btn-white:hover {
+background-color: rgb(190, 190, 190) !important;
 }
 
 .py-25d {
