@@ -153,7 +153,7 @@
                     <div class="col-6 col-lg-3 mt-lg-0">
                         <div class="form-floating">
                             <input type="date" class="form-control custom-floating-height fs-8 fw-semibold"
-                                id="fechaEntrada" placeholder="2025-10-29" value="2025-10-29">
+                                id="fechaEntrada" name="date" placeholder="2025-10-29" value="2025-10-29">
                             <label for="fechaEntrada" class="d-flex align-items-center gap-2 fw-medium">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="#6B6594" stroke-width="2" stroke-linecap="round"
@@ -173,7 +173,7 @@
                     <div class="col-6 col-lg-3  mt-lg-0">
                         <div class="form-floating">
                             <input type="date" class="form-control custom-floating-height fs-8 fw-semibold"
-                                id="fechaSalida" placeholder="31/10/2025" value="2025-10-29">
+                                id="fechaSalida" name="date2" placeholder="31/10/2025" value="2025-10-29">
                             <label for="fechaSalida" class="d-flex align-items-center gap-2 fw-medium">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="#6B6594" stroke-width="2" stroke-linecap="round"
@@ -242,7 +242,7 @@
 
                     <!-- Botón -->
                     <div class="col-12 col-lg-2 mt-3 mt-lg-0">
-                        <button onclick="event.preventDefault(); window.location.href = 'reserva.html'"
+                        <button type="submit"
                             class="btn btn-primary btn-green w-100 border-0 rounded-pill fw-medium py-8d">
                             Ver disponibilidad
                         </button>
