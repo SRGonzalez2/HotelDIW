@@ -138,7 +138,7 @@ nav {
 }
 
 .btn.btn-primary.btn-white:hover {
-background-color: rgb(190, 190, 190) !important;
+    background-color: rgb(190, 190, 190) !important;
 }
 
 .py-25d {
@@ -218,9 +218,32 @@ select {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    position: relative;
     min-height: 220px;
 
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.ac-ofertas::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg,
+            transparent 40%,
+            rgba(255, 255, 255, 0.15) 50%,
+            transparent 60%);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+    pointer-events: none;
 }
 
 .ac-ofertas button {
@@ -260,6 +283,7 @@ select {
 .room-card {
     max-width: 400px;
     max-height: max-content !important;
+
 }
 
 .room-card img {
@@ -416,9 +440,20 @@ footer .separator {
     width: 100%;
 }
 
+#gallery .col-3 {
+    overflow: hidden;
+    perspective: 600px;
+}
+
 #gallery img {
     max-height: 350px;
     width: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#gallery .col-3:hover img {
+    transform: rotateY(8deg) scale(1.05);
+    box-shadow: -10px 10px 30px rgba(29, 24, 82, 0.25);
 }
 
 .tab-header-element {
@@ -551,4 +586,72 @@ footer .separator {
     background-position: center;
     filter: brightness(0.85);
     z-index: 0;
+}
+
+.hero-video {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    /* similar a h-50 */
+    overflow: hidden;
+}
+
+.hero-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.galeria {
+    padding: 40px;
+    text-align: center;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.galeria figure {
+    margin: 0;
+}
+
+.galeria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.galeria figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--button-primary-bg), var(--button-primary-bg-green));
+    z-index: 9999;
+    transition: width 0.1s linear;
 }
